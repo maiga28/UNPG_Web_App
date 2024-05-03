@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def main_dash(request):
     
-    return render(request,'gestions/index.html')
+    return render(request,'gestions/home.html')

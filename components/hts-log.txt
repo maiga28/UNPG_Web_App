@@ -1,0 +1,12 @@
+HTTrack3.49-2+libhtsjava.so.2 launched on Wed, 01 May 2024 22:51:05 at https://catalyst.tailwindui.com/
+(httrack https://catalyst.tailwindui.com/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:52:07	Error: 	"Not Found" (404) at link https://catalyst.tailwindui.com/docs/Button (from https://catalyst.tailwindui.com/docs/dropdown)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 2 seconds : 58 links scanned, 56 files written (8380590 bytes overall) [950932 bytes received at 15337 bytes/sec], 8264665 bytes transferred using HTTP compression in 55 files, ratio 9%, 14.5 requests per connection
+(1 errors, 0 warnings, 0 messages)

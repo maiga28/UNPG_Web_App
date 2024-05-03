@@ -51,3 +51,6 @@ L'application de gestion pour le parti politique vise à faciliter la communicat
 + **Assistance Technique**
    - Service d'assistance pour résoudre les problèmes techniques.
    - Mises à jour régulières pour garantir la sécurité et la stabilité de l'application.
+
+<!-- unpgproject@gmail.com
+<@>maiga<@> -->

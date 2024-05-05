@@ -5,13 +5,13 @@
     <!-- Page wrapper -->
     <div class="crm2f cbvce cxgh5 cfebz c4agq">
 
-                <main class="c9wgl">
+        <main class="c9wgl">
 
             <section class="c27r3">
 
                 <!-- Illustration -->
                 <div class="c3sb3 c2vxt cutr4 c3x17 cs26b ca5ue c7upq cpsfp ch67j" aria-hidden="true">
-                    <img src="images/auth-illustration.svg" class="cbdyn" width="1440" height="450" alt="Page Illustration">
+                    <img src="{% static "accounts/images/auth-illustration.svg" %}" class="cbdyn" width="1440" height="450" alt="Page Illustration">
                 </div>
 
                 <div class="co3q6 c27r3 csm51 csya4 ccyhi">
@@ -23,12 +23,12 @@
                             <div class="crdb2">
                                 <a class="cwban" href="index-2.html">
                                     <div class="c3d7q cegg3 cn2kl cy8oh c1mpe ccqfq csqqr c2sao cck9i ctnsh c27r3 cn544 c4agq cm0fl c0ho4">
-                                        <img class="c27r3" src="images/logo.svg" width="42" height="42" alt="Stellar">
+                                        <img class="c27r3" src="{% static 'accounts/images/logo.svg' %}" width="42" height="42" alt="Stellar">
                                     </div>
                                 </a>
                             </div>
                             <!-- Page title -->
-                            <h1 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez c4zau">Create your free account</h1>
+                            <h1 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez c4zau">Creer un compte</h1>
                         </div>
 
                         <!-- Form -->
@@ -53,24 +53,40 @@
                                         <input id="password" class="c6i2l ca0gw" type="password" autocomplete="on" required="">
                                     </div>
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="referrer">Where did you hear about us? <span class="c620h">*</span></label>
+                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="referrer">ville <span class="c620h">*</span></label>
                                         <select id="referrer" class="c7gkl cvdvu ca0gw c8x2c" required="">
-                                            <option>Google</option>
-                                            <option>Medium</option>
-                                            <option>GitHub</option>
+                                            <option>Conakry</option>
+                                            <option>Mamou</option>
+                                            <option>Kankan</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="referrer">Commune <span class="c620h">*</span></label>
+                                        <select id="referrer" class="c7gkl cvdvu ca0gw c8x2c" required="">
+                                            <option>Matoto</option>
+                                            <option>Dixin</option>
+                                            <option>Ratoma</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="referrer">Quartier <span class="c620h">*</span></label>
+                                        <select id="referrer" class="c7gkl cvdvu ca0gw c8x2c" required="">
+                                            <option>Hamdallaye</option>
+                                            <option>Sonfonia</option>
+                                            <option>Bentourayah</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="ckwat">
                                     <button class="ckbyi cw2sl cnur3 cgpyo cvdvu ca0gw cq2yg cyijk">
-                                        Sign Up <span class="c9pof c406y cxxyq ckj0y cx3jz cgi3a cqzh1">-&gt;</span>
+                                        <a href="{% url 'comptes:login' %}"> Sign Up <span class="c9pof c406y cxxyq ckj0y cx3jz cgi3a cqzh1">-&gt;</span></a>
                                     </button>
                                 </div>
                             </form>
 
                             <div class="cw9su c3os2">
                                 <div class="cmuyi cvdvu">
-                                    Already have an account? <a class="clu19 c3fbv cx3jz ccqx1 cgi3a cqxsj" href="signin.html">Sign in</a>
+                                    Already have an account? <a class="clu19 c3fbv cx3jz ccqx1 cgi3a cqxsj" href="{% url "comptes:login" %}">Sign in</a>
                                 </div>
                             </div>
                             

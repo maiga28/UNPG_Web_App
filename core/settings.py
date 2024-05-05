@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1!a6p+q)jmni(ajzy9tm-e$@5gjy#6k#(%d8tq5q#$nwg6pkcs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['unpg.pythonanywhere.com']
 
 
 # Application definition
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'main_apps.comptes',
     'main_apps.gestions',
     'compressor',
-    
+
 ]
 
 MIDDLEWARE = [

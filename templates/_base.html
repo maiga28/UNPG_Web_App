@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comesi | App</title>
+    <title>UNPG | App </title>
 
     {% compress css %}
     <link rel="stylesheet" href="{% static 'base/src/output.css' %}">
@@ -28,7 +28,7 @@
             document.querySelector('html').classList.add('dark');
             document.querySelector('html').style.colorScheme = 'dark';
         }
-    </script> 
+    </script>
 </head>
 
 <body class="dark:text-slate-400 c3jt4 c6w4h c6vqo c0ndv csf1w" :class="{ 'sidebar-expanded': sidebarExpanded }" x-data="{ sidebarOpen: false, sidebarExpanded: localStorage.getItem('sidebar-expanded') == 'true' }" x-init="$watch('sidebarExpanded', value => localStorage.setItem('sidebar-expanded', value))">
@@ -311,7 +311,7 @@
                                                 <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Readme</span>
                                             </a>
                                         </li>
-                                       
+
                                     </ul>
                                 </div>
                             </li>
@@ -376,7 +376,7 @@
                                 <div class="bg-slate-900 co20q c5o35 c1u8w citi2 cqfmf" x-show="searchOpen" x-transition:enter="c5mjj coq4n ch8aq" x-transition:enter-start="opacity-0" x-transition:enter-end="cqsra" x-transition:leave="c5mjj coq4n c4al0" x-transition:leave-start="cqsra" x-transition:leave-end="opacity-0" aria-hidden="true" x-cloak=""></div>
                                 <!-- Modal dialog -->
                                 <div id="search-modal" class="flex justify-center ct1ew cxbmt clpyc c1u8w crtfr citi2 cqfmf c958j c9r0z" role="dialog" aria-modal="true" x-show="searchOpen" x-transition:enter="c5mjj cgpmj ch8aq" x-transition:enter-start="opacity-0 c8f6f" x-transition:enter-end="cqsra cfwq4" x-transition:leave="c5mjj cgpmj ch8aq" x-transition:leave-start="cqsra cfwq4" x-transition:leave-end="opacity-0 c8f6f" x-cloak="">
-                                    <div class="bg-white dark:bg-slate-800 border dark:border-slate-700 rounded cyj9a cn60w craqh cyd0r cetne c3ff8" @click.outside="searchOpen = false" @keydown.escape.window="searchOpen = false">   
+                                    <div class="bg-white dark:bg-slate-800 border dark:border-slate-700 rounded cyj9a cn60w craqh cyd0r cetne c3ff8" @click.outside="searchOpen = false" @keydown.escape.window="searchOpen = false">
                                         <!-- Search form -->
                                         <form class="border-slate-200 dark:border-slate-700 cz4zt">
                                             <div class="c4ijw">
@@ -469,7 +469,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>                    
+                                </div>
                             </div>
 
                             <!-- Notifications button -->
@@ -503,7 +503,7 @@
                                                 <span class="block ciz4v czgoy cw92y c0qeg">Jan 24, 2020</span>
                                             </a>
                                         </li>
-                                    </ul>                
+                                    </ul>
                                 </div>
                             </div>
 
@@ -543,7 +543,7 @@
                                                 <span>Contact us</span>
                                             </a>
                                         </li>
-                                    </ul>                
+                                    </ul>
                                 </div>
                             </div>
 
@@ -589,7 +589,7 @@
                                         <li>
                                             <a class="text-sm text-indigo-500 flex items-center cuv1l cdi3j cw92y cjm6w cynm4" href="signin.html" @click="open = false" @focus="open = true" @focusout="open = false">Sign Out</a>
                                         </li>
-                                    </ul>                
+                                    </ul>
                                 </div>
                             </div>
 

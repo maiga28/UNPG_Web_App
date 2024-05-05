@@ -1,5 +1,5 @@
 {% extends "_base.html" %}
-
+{% load static %}
 {% block content %}
 
     <main class="ckut6">
@@ -65,22 +65,22 @@
                 <ul class="flex flex-wrap justify-center cejow c2707 clxmc c6tal ce97l">
                     <li>
                         <a class="block" href="#0">
-                            <img class="rounded-full ccqvu ce4tq" src="images/user-36-01.jpg" width="36" height="36" alt="User 01">
+                            <img class="rounded-full ccqvu ce4tq" src="{% static 'base/images/user-36-01.jpg' %}" width="36" height="36" alt="User 01">
                         </a>
                     </li>
                     <li>
                         <a class="block" href="#0">
-                            <img class="rounded-full ccqvu ce4tq" src="images/user-36-02.jpg" width="36" height="36" alt="User 02">
+                            <img class="rounded-full ccqvu ce4tq" src="{% static "base/images/user-36-02.jpg" %}" width="36" height="36" alt="User 02">
                         </a>
                     </li>
                     <li>
                         <a class="block" href="#0">
-                            <img class="rounded-full ccqvu ce4tq" src="images/user-36-03.jpg" width="36" height="36" alt="User 03">
+                            <img class="rounded-full ccqvu ce4tq" src="{% static "base/images/user-36-03.jpg" %}" width="36" height="36" alt="User 03">
                         </a>
                     </li>
                     <li>
                         <a class="block" href="#0">
-                            <img class="rounded-full ccqvu ce4tq" src="images/user-36-04.jpg" width="36" height="36" alt="User 04">
+                            <img class="rounded-full ccqvu ce4tq" src="{% static "base/images/user-36-04.jpg" %}" width="36" height="36" alt="User 04">
                         </a>
                     </li>
                     <li>
@@ -182,12 +182,12 @@
             <!-- Cards -->
             <div class="czwnc cki30 c5va1">
 
-                <!-- Line chart (Acme Plus) -->
+                <!-- Line chart (Total menbres) -->
                 <div class="flex bg-white dark:bg-slate-800 rounded-sm border border-slate-200 dark:border-slate-700 cugyv c04fd c4osb cetne chmlm">
                     <div class="cx95x cc5dk">
                         <header class="flex cmgwo cxbmt c7j98">
                             <!-- Icon -->
-                            <img src="images/icon-01.svg" width="32" height="32" alt="Icon 01">
+                            <img src="{% static "base/images/icon-01.svg" %}" width="32" height="32" alt="Icon 01">
                             <!-- Menu button -->
                             <div class="inline-flex c4ijw" x-data="{ open: false }">
                                 <button class="rounded-full" :class="open ? 'c6vqo ce4zx text-slate-500 dark:czgoy': 'czgoy cljes ciz4v coyl7'" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open">
@@ -213,8 +213,8 @@
                                 </div>
                             </div>
                         </header>
-                        <h2 class="text-slate-800 dark:text-slate-100 cqosy cs31h c7j98">Acme Plus</h2>
-                        <div class="ciz4v czgoy cqosy cw3n3 c0qeg ci4cg">Sales</div>
+                        <h2 class="text-slate-800 dark:text-slate-100 cqosy cs31h c7j98">Total menbres</h2>
+                        <div class="ciz4v czgoy cqosy cw3n3 c0qeg ci4cg">Actifs</div>
                         <div class="flex cxbmt">
                             <div class="text-3xl font-bold text-slate-800 dark:text-slate-100 mr-2">$24,780</div>
                             <div class="text-sm rounded-full ck3g6 cqosy ceqwg c6er6">+49%</div>
@@ -228,12 +228,12 @@
                     </div>
                 </div>
 
-                <!-- Line chart (Acme Advanced) -->
+                <!-- Line chart (Communaute) -->
                 <div class="flex bg-white dark:bg-slate-800 rounded-sm border border-slate-200 dark:border-slate-700 cugyv c04fd c4osb cetne chmlm">
                     <div class="cx95x cc5dk">
                         <header class="flex cmgwo cxbmt c7j98">
                             <!-- Icon -->
-                            <img src="images/icon-02.svg" width="32" height="32" alt="Icon 02">
+                            <img src="{% static "base/images/icon-02.svg" %}" width="32" height="32" alt="Icon 02">
                             <!-- Menu button -->
                             <div class="inline-flex c4ijw" x-data="{ open: false }">
                                 <button class="rounded-full" :class="open ? 'c6vqo ce4zx text-slate-500 dark:czgoy': 'czgoy cljes ciz4v coyl7'" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open">
@@ -259,10 +259,10 @@
                                 </div>
                             </div>
                         </header>
-                        <h2 class="text-slate-800 dark:text-slate-100 cqosy cs31h c7j98">Acme Advanced</h2>
-                        <div class="ciz4v czgoy cqosy cw3n3 c0qeg ci4cg">Sales</div>
+                        <h2 class="text-slate-800 dark:text-slate-100 cqosy cs31h c7j98">Communaute</h2>
+                        <div class="ciz4v czgoy cqosy cw3n3 c0qeg ci4cg">Actifs</div>
                         <div class="flex cxbmt">
-                            <div class="text-3xl font-bold text-slate-800 dark:text-slate-100 mr-2">$17,489</div>
+                            <div class="text-3xl font-bold text-slate-800 dark:text-slate-100 mr-2">489</div>
                             <div class="text-sm rounded-full cqosy ctnuc ceqwg c6er6">-14%</div>
                         </div>
                     </div>
@@ -274,12 +274,12 @@
                     </div>
                 </div>
                 
-                <!-- Line chart (Acme Professional) -->
+                <!-- Line chart (Paiements) -->
                 <div class="flex bg-white dark:bg-slate-800 rounded-sm border border-slate-200 dark:border-slate-700 cugyv c04fd c4osb cetne chmlm">
                     <div class="cx95x cc5dk">
                         <header class="flex cmgwo cxbmt c7j98">
                             <!-- Icon -->
-                            <img src="images/icon-03.svg" width="32" height="32" alt="Icon 03">
+                            <img src="{% static "base/images/icon-03.svg" %}" width="32" height="32" alt="Icon 03">
                             <!-- Menu button -->
                             <div class="inline-flex c4ijw" x-data="{ open: false }">
                                 <button class="rounded-full" :class="open ? 'c6vqo ce4zx text-slate-500 dark:czgoy': 'czgoy cljes ciz4v coyl7'" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open">
@@ -305,10 +305,10 @@
                                 </div>
                             </div>
                         </header>
-                        <h2 class="text-slate-800 dark:text-slate-100 cqosy cs31h c7j98">Acme Professional</h2>
-                        <div class="ciz4v czgoy cqosy cw3n3 c0qeg ci4cg">Sales</div>
+                        <h2 class="text-slate-800 dark:text-slate-100 cqosy cs31h c7j98">Totale paiements</h2>
+                        <div class="ciz4v czgoy cqosy cw3n3 c0qeg ci4cg">Actifs</div>
                         <div class="flex cxbmt">
-                            <div class="text-3xl font-bold text-slate-800 dark:text-slate-100 mr-2">$9,962</div>
+                            <div class="text-3xl font-bold text-slate-800 dark:text-slate-100 mr-2">962</div>
                             <div class="text-sm rounded-full ck3g6 cqosy ceqwg c6er6">+29%</div>
                         </div>
                     </div>

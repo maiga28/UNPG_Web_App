@@ -62,7 +62,7 @@
                         </svg>
                     </button>
                     <!-- Logo -->
-                    <a class="block" href="index-2.html">
+                    <a class="block" href="{% url "gestions:home" %}">
                         <svg width="32" height="32" viewBox="0 0 32 32">
                             <defs>
                                 <linearGradient x1="28.538%" y1="20.229%" x2="100%" y2="108.156%" id="logo-a">
@@ -93,7 +93,7 @@
                         <ul class="cabqp">
                             <!-- Dashboard -->
                             <li class="rounded-sm bg-slate-900 cyf82 cp8im cjm6w cfnh0" x-data="{ open: true }">
-                                <a class="block cmo81 crp72 c5mjj c32al" href="#0" @click.prevent="open = !open; sidebarExpanded = true">
+                                <a class="block cmo81 crp72 c5mjj c32al" href="{% url "gestions:home" %}" @click.prevent="open = !open; sidebarExpanded = true">
                                     <div class="flex items-center cmgwo">
                                         <div class="flex items-center">
                                             <svg class="c7n6y ceob2 chcsl" viewBox="0 0 24 24">
@@ -114,18 +114,18 @@
                                 <div class="2xl:block cofpc cpbr8 caqfm">
                                     <ul class="c5xk8 ctmd2" :class="open ? 'cylx5' : 'hidden'">
                                         <li class="cyf82 ci4cg">
-                                            <a class="block text-indigo-500 crp72 c5mjj c32al" href="">
-                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Demandes</span>
+                                            <a class="block text-indigo-500 crp72 c5mjj c32al" href="{% url "gestions:membre" %}">
+                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Membres</span>
                                             </a>
                                         </li>
                                         <li class="cyf82 ci4cg">
-                                            <a class="block critd czgoy crp72 c5mjj c32al" href="">
-                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Clients</span>
+                                            <a class="block critd czgoy crp72 c5mjj c32al" href="{% url "Communaute:communaute" %}">
+                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Communaute</span>
                                             </a>
                                         </li>
                                         <li class="cyf82 ci4cg">
-                                            <a class="block critd czgoy crp72 c5mjj c32al" href="">
-                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Factures</span>
+                                            <a class="block critd czgoy crp72 c5mjj c32al" href="{% url "Paiement:paiement" %}">
+                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Paiements</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -141,7 +141,7 @@
                                                 <path class="c6w4h c3wll" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"></path>
                                                 <path class="czgoy c3wll" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"></path>
                                             </svg>
-                                            <span class="text-sm ml-3 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Camionnaires</span>
+                                            <span class="text-sm ml-3 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Communaute</span>
                                         </div>
                                         <!-- Icon -->
                                         <div class="flex 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq c7n6y c9o7o">
@@ -154,8 +154,8 @@
                                 <div class="2xl:block cofpc cpbr8 caqfm">
                                     <ul class="hidden c5xk8 ctmd2" :class="open ? 'cylx5' : 'hidden'">
                                         <li class="cyf82 ci4cg">
-                                            <a class="block critd czgoy crp72 c5mjj c32al" href="">
-                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Camionnaires</span>
+                                            <a class="block critd czgoy crp72 c5mjj c32al" href="{% url "Communaute:communaute" %}">
+                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Communaute</span>
                                             </a>
                                         </li>
                                         <li class="cyf82 ci4cg">
@@ -182,7 +182,7 @@
                                                 <path class="c6w4h c3wll" d="M1 1h22v23H1z"></path>
                                                 <path class="czgoy c3wll" d="M15 10.586L16.414 12 11 17.414 7.586 14 9 12.586l2 2zM5 0h14v4H5z"></path>
                                             </svg>
-                                            <span class="text-sm ml-3 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Tasks</span>
+                                            <span class="text-sm ml-3 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Assistant Technique</span>
                                         </div>
                                         <!-- Icon -->
                                         <div class="flex 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq c7n6y c9o7o">
@@ -196,7 +196,7 @@
                                     <ul class="hidden c5xk8 ctmd2" :class="open ? 'cylx5' : 'hidden'">
                                         <li class="cyf82 ci4cg">
                                             <a class="block critd czgoy crp72 c5mjj c32al" href="tasks-kanban.html">
-                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">Attribution</span>
+                                                <span class="text-sm 2xl:opacity-100 cjbqm cd0k1 cbunn ch8aq cw92y">ajouter</span>
                                             </a>
                                         </li>
                                         <li class="cyf82 ci4cg">

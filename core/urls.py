@@ -26,4 +26,11 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('gestions/', include('main_apps.gestions.urls')),
     path('comptes/', include('main_apps.comptes.urls')),
+    path('assistance/', include('main_apps.Assistance_Technique.urls')),
+    path('communication/', include('main_apps.Communication.urls')),
+    path('comptabilite/', include('main_apps.Comptabilite.urls')),
+    path('paiement/', include('main_apps.Paiement.urls')),
+    path('statistique/', include('main_apps.Statistique.urls')),
+    path('vote/', include('main_apps.Vote.urls')),
+    path('Communaute/', include('main_apps.Communaute.urls')),
 ]

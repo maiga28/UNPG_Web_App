@@ -39,6 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main_apps.comptes',
     'main_apps.gestions',
+    'main_apps.Vote',
+    'main_apps.Assistance_Technique',
+    'main_apps.Communication',
+    'main_apps.Comptabilite',
+    'main_apps.Paiement',
+    'main_apps.Statistique',
+    'main_apps.Communaute',
     'compressor',
 
 ]

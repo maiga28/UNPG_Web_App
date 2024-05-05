@@ -28,7 +28,7 @@
                                 </a>
                             </div>
                             <!-- Page title -->
-                            <h1 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez c4zau">Sign in to your account</h1>
+                            <h1 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez c4zau">Ouvrez votre session</h1>
                         </div>
                         
                         <!-- Form -->
@@ -49,15 +49,17 @@
                                     </div>
                                 </div>
                                 <div class="ckwat">
-                                    <button class="ckbyi cw2sl cnur3 cgpyo cvdvu ca0gw cq2yg cyijk">
-                                        Sign In <span class="c9pof c406y cxxyq ckj0y cx3jz cgi3a cqzh1">-&gt;</span>
-                                    </button>
+                                    
+                                        <button class="ckbyi cw2sl cnur3 cgpyo cvdvu ca0gw cq2yg cyijk">
+                                    <a href="{% url 'gestions:home' %}"> Sign In <span class="c9pof c406y cxxyq ckj0y cx3jz cgi3a cqzh1">-&gt;</span></a>
+                                        </button>
+                                    
                                 </div>
                             </form>
 
                             <div class="cw9su c3os2">
                                 <div class="cmuyi cvdvu">
-                                    Don't have an account? <a class="clu19 c3fbv cx3jz ccqx1 cgi3a cqxsj" href="signup.html">Sign up</a>
+                                    Vous avez pas de Compte ? <a class="clu19 c3fbv cx3jz ccqx1 cgi3a cqxsj" href="{% url "comptes:register" %}">Sign up</a>
                                 </div>
                             </div>
 

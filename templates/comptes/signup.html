@@ -32,45 +32,116 @@
                         </div>
 
                         <!-- Form -->
-                        <div class="c1omz csya4">
+                        <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
 
                             <form>
-                                <div class="cavuv">
+                                <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6">
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="company">Company <span class="c620h">*</span></label>
-                                        <input id="company" class="c6i2l ca0gw" type="text" placeholder="mE.g., Acme Inc." required="">
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="company">Company <span class="c620h">*</span></label>
+                                        <input id="company" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
                                     </div>
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="full-name">Full Name <span class="c620h">*</span></label>
-                                        <input id="full-name" class="c6i2l ca0gw" type="text" placeholder="E.g., Mark Rossi" required="">
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="full-name">Full Name <span class="c620h">*</span></label>
+                                        <input id="full-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="E.g., Mark Rossi" required="">
                                     </div>
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="email">Email <span class="c620h">*</span></label>
-                                        <input id="email" class="c6i2l ca0gw" type="email" placeholder="markrossi@company.com" required="">
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="email">Email <span class="c620h">*</span></label>
+                                        <input id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="markrossi@company.com" required="">
                                     </div>
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="password">Password <span class="c620h">*</span></label>
-                                        <input id="password" class="c6i2l ca0gw" type="password" autocomplete="on" required="">
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="referrer">Quel est votre état matrimonial ?<span class="c620h">*</span></label>
+                                        <select id="referrer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                                            <option>Marié(e)</option>
+                                            <option>Célibataire</option>
+                                            <option>Divorcé(e)</option>
+                                            <option>Veuf/Veuve</option>
+                                        </select>
                                     </div>
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="referrer">ville <span class="c620h">*</span></label>
-                                        <select id="referrer" class="c7gkl cvdvu ca0gw c8x2c" required="">
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="password">Password <span class="c620h">*</span></label>
+                                        <input id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" autocomplete="on" required="">
+                                    </div>
+                                    <div>
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="referrer">Civilité <span class="c620h">*</span></label>
+                                        <select id="referrer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                                            <option>Mosieur</option>
+                                            <option>Madame</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="referrer">Régions <span class="c620h">*</span></label>
+                                        <select id="referrer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                                            <option>Boké</option>
+                                            <option>Faranah</option>
+                                            <option>Kankan</option>
+                                            <option>Kindia</option>
+                                            <option>Labé</option>
+                                            <option>Mamou</option>
+                                            <option>N'zérékoré</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="referrer">préfectures <span class="c620h">*</span></label>
+                                        <select id="referrer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                                            <option>Boké</option>
+                                            <option>Boffa</option>
+                                            <option>Koundara</option>
+                                            <option>Fria</option>
+                                            <option>Gaoual</option>
+                                            <option>Dabola</option>
+                                            <option>Dinguiraye</option>
+                                            <option>Faranah</option>
+                                            <option>Kissidougou</option>
+                                            <option>Kankan</option>
+                                            <option>Kérouane</option>
+                                            <option>Mandiana</option>
+                                            <option>Kouroussa</option>
+                                            <option>Siguiri</option>
+                                            <option>Coyah</option>
+                                            <option>Dubréka</option>
+                                            <option>Forécariah</option>
+                                            <option>Kindia</option>
+                                            <option>Télimélé</option>
+                                            <option>Koubia</option>
+                                            <option>Labé</option>
+                                            <option>Lelouma</option>
+                                            <option>Mali</option>
+                                            <option>Tougué</option>
+                                            <option>Dalaba</option>
+                                            <option>Mamou</option>
+                                            <option>Pita</option>
+                                            <option>Beyla</option>
+                                            <option>Guéckédou</option>
+                                            <option>Lola</option>
+                                            <option>Macenta</option>
+                                            <option>Yomou</option>
+                                            <option>N’zérékoré</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="referrer">ville <span class="c620h">*</span></label>
+                                        <select id="referrer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
                                             <option>Conakry</option>
                                             <option>Mamou</option>
                                             <option>Kankan</option>
                                         </select>
                                     </div>
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="referrer">Commune <span class="c620h">*</span></label>
-                                        <select id="referrer" class="c7gkl cvdvu ca0gw c8x2c" required="">
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="full-name">Numero Tell<span class="c620h">*</span></label>
+                                        <input id="Telephone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="622 958 866" required="">
+                                    </div>
+
+                                    <div>
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="referrer">Commune <span class="c620h">*</span></label>
+                                        <select id="referrer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
                                             <option>Matoto</option>
                                             <option>Dixin</option>
                                             <option>Ratoma</option>
                                         </select>
                                     </div>
                                     <div>
-                                        <label class="cit3o ccqx1 cvdvu cxz3l c986a" for="referrer">Quartier <span class="c620h">*</span></label>
-                                        <select id="referrer" class="c7gkl cvdvu ca0gw c8x2c" required="">
+                                        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="referrer">Quartier <span class="c620h">*</span></label>
+                                        <select id="referrer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
                                             <option>Hamdallaye</option>
                                             <option>Sonfonia</option>
                                             <option>Bentourayah</option>
@@ -81,7 +152,7 @@
                                     <button class="ckbyi cw2sl cnur3 cgpyo cvdvu ca0gw cq2yg cyijk">
                                         <a href="{% url 'comptes:login' %}"> Sign Up <span class="c9pof c406y cxxyq ckj0y cx3jz cgi3a cqzh1">-&gt;</span></a>
                                     </button>
-                                </div>
+                                </div> 
                             </form>
 
                             <div class="cw9su c3os2">
